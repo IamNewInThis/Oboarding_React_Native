@@ -1,17 +1,15 @@
-<<<<<<< Updated upstream
 import { View, Text, StyleSheet, Image } from 'react-native'
-=======
-import { View, Text } from 'react-native'
->>>>>>> Stashed changes
 import React from 'react'
+import Onboarding from 'react-native-onboarding-swiper'
 
-export default function HomeScreen() {
+const OnboardingScreen = ({navigation}) => {
+
     return (
-<<<<<<< Updated upstream
         <View style={styles.container}>
             <Onboarding
                 titleStyles={styles.title}
                 subTitleStyles={styles.subtitle}
+                onSkip={() =>navigation.navigate("Login")}
                 pages={[
                     {
                         backgroundColor: "#fff",
@@ -30,6 +28,7 @@ export default function HomeScreen() {
                         image: <Image source={require('../assets/images/Onboarding_2.png')} style={styles.img3} />,
                         title: "Onboardin asag",
                         subtitle: "Done with React mucho textoNative Onboarding Swiper",
+                        
                     },
 
                 ]} />
@@ -71,11 +70,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default HomeScreen
-=======
-        <View>
-            <Text>HomeScreen</Text>
-        </View>
-    )
-}
->>>>>>> Stashed changes
+export default OnboardingScreen
