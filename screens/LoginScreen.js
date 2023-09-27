@@ -1,17 +1,3 @@
-<<<<<<< Updated upstream
-import { View, Text } from 'react-native'
-import React from 'react'
-
-const LoginScreen = () => {
-    return (
-        <View>
-        <Text>LoginScreen</Text>
-        </View>
-    )
-}
-
-export default LoginScreen
-=======
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, useWindowDimensions } from 'react-native';
 
@@ -171,4 +157,3 @@ const styles = StyleSheet.create({
 });
 
 export default LoginScreen;
->>>>>>> Stashed changes
